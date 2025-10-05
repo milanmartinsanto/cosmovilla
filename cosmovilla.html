@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Residency: Building a Home in the Cosmos</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Custom Font and Theming */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712; /* Darker than default black */
+            color: #e5e7eb; /* Light gray text */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        /* Subtle star-field background using a gradient overlay */
+        .space-bg {
+            background-image: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 2000px 2000px;
+            animation: move-bg 60s linear infinite;
+        }
+        @keyframes move-bg {
+            from { background-position: 0 0; }
+            to { background-position: -2000px -2000px; }
+        }
+        /* Custom highlight color for titles and accents - CHANGED TO VIOLET/FUCHSIA */
+        .accent-text {
+            color: #e879f9; /* Fuchsia 400 */
+        }
+        .accent-bg {
+            background-color: #e879f9; /* Fuchsia 400 */
+        }
+    </style>
+</head>
+<body class="space-bg">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 p-4 bg-gray-900/95 backdrop-blur-sm shadow-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold accent-text">Cosmovilla</div>
+            <!-- Simple Nav Links Placeholder -->
+            <div class="hidden md:flex space-x-6 text-sm">
+                <a href="#intro" class="hover:text-white transition duration-200">Introduction</a>
+                <a href="#objectives" class="hover:text-white transition duration-200">Objectives</a>
+                <a href="#power" class="hover:text-white transition duration-200">Power & Life Support</a>
+                <a href="#safety" class="hover:text-white transition duration-200">Safety</a>
+                <a href="#contact" class="hover:text-white transition duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Hero Section -->
+        <header class="py-24 text-center">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">
+                SPACE RESIDENCY
+            </h1>
+            <p class="text-xl sm:text-2xl font-light accent-text mb-6">
+                BUILDING A HOME IN THE COSMOS
+            </p>
+            <p class="text-lg text-gray-400">
+                A project by Cosmovilla
+            </p>
+            <div class="mt-10">
+                <!-- Button color changed to match violet/fuchsia theme -->
+                <a href="#intro" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-gray-900 bg-fuchsia-400 hover:bg-fuchsia-300 transition duration-300 transform hover:scale-105">
+                    Explore the Concept <i class="fas fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- Content Sections Container -->
+        <div class="space-y-24 py-16">
+
+            <!-- 1. Introduction -->
+            <section id="intro" class="bg-gray-800/50 p-8 rounded-xl shadow-2xl backdrop-blur-sm border border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 accent-text">1. Introduction</h2>
+                <p class="text-lg leading-relaxed text-gray-300">
+                    Our project aims to design a next-generation space shuttle that allows humans to live and work in space for long periods without facing issues. To achieve this, we plan to power the shuttle using nuclear energy, providing a constant and reliable power source for life support, propulsion, and research systems.
+                </p>
+                <p class="mt-4 text-lg leading-relaxed text-gray-300">
+                    This concept will make long-term space missions more sustainable, efficient, and independent, paving the way for the future of human space exploration beyond Earth's orbit.
+                </p>
+            </section>
+
+            <!-- 2. Problem Statement -->
+            <section id="problem" class="bg-gray-800/50 p-8 rounded-xl shadow-2xl backdrop-blur-sm border border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 accent-text">2. The Challenge: Problem Statement</h2>
+                <ul class="space-y-4 text-gray-300 text-lg list-none p-0">
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-white mt-2 mr-3"></i>
+                        <p>Current space shuttles and stations depend mainly on solar energy and limited fuel, which cannot sustain long-term missions far from Earth.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-white mt-2 mr-3"></i>
+                        <p>As humans aim to explore deeper into space, challenges such as limited power supply, life support constraints, and dependence on Earth for resources make survival difficult for extended periods.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-lightbulb text-yellow-400 mt-1 mr-3 text-xl"></i>
+                        <p><strong class="text-white">The Need:</strong> A reliable, long-lasting, and powerful energy source that can support human life and shuttle operations in space for years without frequent refueling or resupply.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 3. Objectives -->
+            <section id="objectives" class="bg-gray-800/50 p-8 rounded-xl shadow-2xl backdrop-blur-sm border border-gray-700">
+                <h2 class="text-3xl font-bold mb-8 accent-text text-center">3. Core Objectives</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-fuchsia-500/50 hover:border-fuchsia-500 transition duration-300">
+                        <i class="fas fa-satellite-dish text-3xl accent-text mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Long-Duration Residency</h3>
+                        <p class="text-gray-400">Design a space shuttle capable of supporting human life for long durations in space.</p>
+                    </div>
+
+                    <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-fuchsia-500/50 hover:border-fuchsia-500 transition duration-300">
+                        <i class="fas fa-atom text-3xl accent-text mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Constant Power Supply</h3>
+                        <p class="text-gray-400">Power the shuttle using nuclear energy for a constant and reliable power supply.</p>
+                    </div>
+
+                    <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-fuchsia-500/50 hover:border-fuchsia-500 transition duration-300">
+                        <i class="fas fa-recycle text-3xl accent-text mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Self-Sustaining Life Support</h3>
+                        <p class="text-gray-400">Develop systems for oxygen, water, food, and waste recycling.</p>
+                    </div>
+
+                    <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-fuchsia-500/50 hover:border-fuchsia-500 transition duration-300">
+                        <i class="fas fa-globe-americas text-3xl accent-text mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Deep Space Independence</h3>
+                        <p class="text-gray-400">Enable safe and efficient long-term deep space missions without dependence on Earth.</p>
+                    </div>
+
+                    <div class="p-6 bg-gray-900 rounded-xl shadow-lg border border-fuchsia-500/50 hover:border-fuchsia-500 transition duration-300">
+                        <i class="fas fa-rocket text-3xl accent-text mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Technology Revolution</h3>
+                        <p class="text-gray-400">Demonstrate how nuclear technology can revolutionize human space exploration.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 4. Power Source: Nuclear Energy -->
+            <section id="power" class="bg-gray-800/50 p-8 rounded-xl shadow-2xl backdrop-blur-sm border border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 accent-text">4. Power Source: Nuclear Energy</h2>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2 space-y-4 text-gray-300 text-lg">
+                        <p>Nuclear energy is produced by splitting atoms (nuclear fission), releasing a large amount of heat and power.</p>
+                        <p>It provides a steady, long-lasting, and powerful energy source—ideal for long-term space missions.</p>
+                        <p>Unlike solar power, nuclear energy works even far from the Sun and during long dark periods.</p>
+                    </div>
+                    <div class="md:w-1/2 bg-gray-900 p-6 rounded-lg shadow-xl border border-fuchsia-500/50">
+                        <h3 class="text-xl font-semibold text-white mb-3">Key Applications</h3>
+                        <ul class="space-y-2 text-gray-300 list-disc list-inside">
+                            <li>Life support (oxygen, water, temperature)</li>
+                            <li>Propulsion systems</li>
+                            <li>Communication and research equipment</li>
+                        </ul>
+                        <p class="mt-4 text-sm text-yellow-400">
+                            NASA has already tested similar systems like the Kilopower reactor, proving its safety and reliability in space.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Life Support & Sustainability (New Section) -->
+            <section id="life-support" class="bg-gray-800/50 p-8 rounded-xl shadow-2xl backdrop-blur-sm border border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 accent-text">5. Life Support & Sustainability</h2>
+                <p class="text-lg leading-relaxed text-gray-300 mb-6">
+                    The shuttle is designed to create a "self-sustaining environment" for humans for a long period of time, drastically reducing reliance on Earth-based resupply missions.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <ul class="space-y-3 text-gray-300 text-base list-none p-0">
+                        <li class="flex items-start"><i class="fas fa-lungs text-fuchsia-400 mt-1 mr-3"></i> <strong>Oxygen Generation:</strong> Electrolysis of water and plant-based oxygen production.</li>
+                        <li class="flex items-start"><i class="fas fa-tint text-fuchsia-400 mt-1 mr-3"></i> <strong>Water Recycling:</strong> Purifies and reuses water from humidity and waste.</li>
+                        <li class="flex items-start"><i class="fas fa-seedling text-fuchsia-400 mt-1 mr-3"></i> <strong>Food Production:</strong> Hydroponic or aeroponic systems to grow fresh food.</li>
+                    </ul>
+                    <ul class="space-y-3 text-gray-300 text-base list-none p-0">
+                        <li class="flex items-start"><i class="fas fa-trash-alt text-fuchsia-400 mt-1 mr-3"></i> <strong>Waste Management:</strong> Converts waste into reusable materials or energy.</li>
+                        <li class="flex items-start"><i class="fas fa-thermometer-half text-fuchsia-400 mt-1 mr-3"></i> <strong>Climate Control:</strong> Maintains a stable temperature and pressure habitat.</li>
+                        <li class="flex items-start"><i class="fas fa-shield-alt text-fuchsia-400 mt-1 mr-3"></i> <strong>Radiation Protection:</strong> Uses shielding materials and magnetic fields to keep the crew safe.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 6. Safety & Challenges (New Section) -->
+            <section id="safety" class="bg-gray-800/50 p-8 rounded-xl shadow-2xl backdrop-blur-sm border border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 accent-text">6. Safety & Challenges</h2>
+                <div class="grid md:grid-cols-2 gap-6 text-gray-300 text-lg">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-white border-b border-gray-700 pb-1">Primary Concerns</h3>
+                        <ul class="space-y-3 list-disc list-inside">
+                            <li>Radiation Shielding: Protecting humans from both space radiation and the reactor’s radiation.</li>
+                            <li>Reactor Safety: Ensuring the nuclear reactor operates safely without overheating or leaks.</li>
+                            <li>Waste Management: Safe disposal or storage of radioactive waste materials.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-white border-b border-gray-700 pb-1">Operational Hurdles</h3>
+                        <ul class="space-y-3 list-disc list-inside">
+                            <li>Cooling Systems: Maintaining stable temperatures in space’s extreme conditions.</li>
+                            <li>Maintenance Difficulty: Repairs and troubleshooting in space are complex and risky.</li>
+                            <li>Launch Safety: The reactor must stay inactive until the shuttle reaches a safe orbit.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. Advantages of Nuclear Power (New Section) -->
+            <section id="advantages" class="bg-gray-800/50 p-8 rounded-xl shadow-2xl backdrop-blur-sm border border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 accent-text text-center">7. Advantages of Nuclear Power in Space</h2>
+                <div class="grid md:grid-cols-3 gap-6 text-gray-300 text-lg">
+                    <div class="flex flex-col items-center text-center p-4 bg-gray-900 rounded-lg shadow-md border-t border-fuchsia-500">
+                        <i class="fas fa-bolt text-3xl accent-text mb-2"></i>
+                        <p class="font-semibold text-white">Continuous Power</p>
+                        <p class="text-sm">Reliable power supply for many years, independent of sunlight.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-4 bg-gray-900 rounded-lg shadow-md border-t border-fuchsia-500">
+                        <i class="fas fa-tachometer-alt text-3xl accent-text mb-2"></i>
+                        <p class="font-semibold text-white">Faster Travel</p>
+                        <p class="text-sm">Powers advanced propulsion systems for quicker deep-space travel.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-4 bg-gray-900 rounded-lg shadow-md border-t border-fuchsia-500">
+                        <i class="fas fa-map-marked-alt text-3xl accent-text mb-2"></i>
+                        <p class="font-semibold text-white">Deep Space Practicality</p>
+                        <p class="text-sm">Makes exploration (Moon, Mars, and beyond) practical and sustainable.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. Conclusion (New Section) -->
+            <section id="conclusion" class="bg-gray-800/50 p-8 rounded-xl shadow-2xl backdrop-blur-sm border border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 accent-text">8. Conclusion</h2>
+                <div class="text-lg leading-relaxed text-gray-300">
+                    <p class="mb-4">
+                        The use of nuclear energy can transform the future of human space exploration. It provides unlimited, stable, and powerful energy for long-term survival in space.
+                    </p>
+                    <p class="mb-6">
+                        Our design shows how a nuclear-powered space shuttle can support human life safely and efficiently for years. This innovation brings us closer to deep-space travel and the dream of sustained human presence beyond Earth.
+                    </p>
+                    <p class="text-xl font-bold text-center accent-text italic">
+                        "With nuclear power, the stars are no longer out of reach - they’re our next home.”
+                    </p>
+                </div>
+            </section>
+
+            <!-- 9. Contact & Team Section - UPDATED -->
+            <section id="contact" class="bg-gray-800/50 p-8 rounded-xl shadow-2xl backdrop-blur-sm border border-gray-700">
+                <h2 class="text-3xl font-bold mb-6 accent-text text-center">9. Contact & Team</h2>
+                
+                <div class="max-w-3xl mx-auto space-y-8">
+                    
+                    <!-- Contact Details -->
+                    <div class="text-center">
+                        <p class="text-lg text-gray-300 mb-4">
+                            Interested in collaborating or sharing your thoughts on the Space Residency project? Reach out to the Cosmovilla team.
+                        </p>
+                        <!-- Email link updated -->
+                        <a href="mailto:martimuzics@gmail.com" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-gray-900 bg-fuchsia-400 hover:bg-fuchsia-300 transition duration-300 transform hover:scale-105">
+                            <i class="fas fa-envelope mr-2"></i> Email the Team
+                        </a>
+                        <p class="text-sm text-gray-500 mt-2">martimuzics@gmail.com</p>
+                    </div>
+
+                    <!-- Team Members -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4 text-center border-t border-gray-700 pt-4">Project Team Members (Cosmovilla)</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+                            <div class="p-3 bg-gray-900 rounded-lg text-fuchsia-300 text-sm font-medium shadow-inner">Milan Martin Santo</div>
+                            <div class="p-3 bg-gray-900 rounded-lg text-fuchsia-300 text-sm font-medium shadow-inner">Meeval Anna Manoj</div>
+                            <div class="p-3 bg-gray-900 rounded-lg text-fuchsia-300 text-sm font-medium shadow-inner">Ashna Tomy</div>
+                            <div class="p-3 bg-gray-900 rounded-lg text-fuchsia-300 text-sm font-medium shadow-inner">Nelwin John</div>
+                            <div class="p-3 bg-gray-900 rounded-lg text-fuchsia-300 text-sm font-medium shadow-inner">Mohammed Sinan</div>
+                            <div class="p-3 bg-gray-900 rounded-lg text-fuchsia-300 text-sm font-medium shadow-inner">K M Midhun</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-20 py-8 text-center border-t border-gray-800 bg-gray-900">
+        <p class="text-sm text-gray-500">&copy; 2025 Cosmovilla. All Rights Reserved. Concept Prototype.</p>
+    </footer>
+
+</body>
+</html>
